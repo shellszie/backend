@@ -3,7 +3,7 @@ class User < ApplicationRecord
 
   has_secure_password
 
-  attr_accessor :password_digest
+  # attr_accessor :password_digest
 
   validates :email, presence: true
   validates_format_of :email,  with: /\A[^@\s]+@[^@\s]+\z/, message: "Must be a valid email address"
